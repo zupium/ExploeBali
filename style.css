@@ -1,0 +1,69 @@
+/*base*/
+body{
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    padding-top: 70px;
+}
+
+/*warna kustom*/
+.text-orange{ color: #ff6b35 !important;}
+.bg-orange{ background: #ff6b35 !important;}
+.btn-orange{ background: #ff6b35; color: #fff; border: none;}
+.btn-orange:hover{ background: #e85a24; color: #fff;}
+
+/*navbar*/
+.custom-navbar{
+    background: rgba(255, 255, 255, 0.97);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.custom-navbar .nav-link{
+    color: #333 !important;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.custom-navbar .nav-link:hover{ color: #0077b6 !important;}
+
+/*hero*/
+.hero{
+    min-height: 100vh;
+    margin-top: -70px;
+    padding-top: 70px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/hero-bg.jpeg') center/cover;
+}
+
+/*card*/
+.card-img-fixed{ height: 200px; object-fit: cover;}
+.card-hover{transition: 0.4s;}
+.card-hover:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/*galeri*/
+.gallery-img{
+    height: 450px;
+    object-fit: cover;
+}
+
+/*filter active*/
+.filter-btn.active{
+    background: #0077b6;
+    color: #fff;
+}
+
+/*responsive*/
+@media (max-width:786px){
+    .hero h1{
+        font-size: 2rem;
+    }
+    .gallery-img{height: 300px;}
+    .custom-navbar navbar-collapse{
+        background: #fff;
+        padding: 15px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+}
