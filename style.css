@@ -24,7 +24,9 @@ body{
     transition: 0.3s;
 }
 
-.custom-navbar .nav-link:hover{ color: #0077b6 !important;}
+.custom-navbar .nav-link:hover{
+    color: #0077b6 !important;
+}
 
 /*hero*/
 .hero{
@@ -35,7 +37,10 @@ body{
 }
 
 /*card*/
-.card-img-fixed{ height: 200px; object-fit: cover;}
+.card-img-fixed{
+    height: 200px;
+    object-fit: cover;
+}
 .card-hover{transition: 0.4s;}
 .card-hover:hover{
     transform: translateY(-10px);
@@ -55,12 +60,12 @@ body{
 }
 
 /*responsive*/
-@media (max-width:786px){
+@media (max-width: 768px){
     .hero h1{
         font-size: 2rem;
     }
     .gallery-img{height: 300px;}
-    .custom-navbar navbar-collapse{
+    .custom-navbar .navbar-collapse{
         background: #fff;
         padding: 15px;
         border-radius: 10px;
